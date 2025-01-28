@@ -1,0 +1,103 @@
+.header-container {
+  }
+  
+  .desktop-header {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 28px;
+  }
+  
+  .desktop-header .logo-desktop {
+    width: 130px;
+    height: 50px;
+  }
+  
+  .desktop-nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-right: 3rem;
+  }
+  
+  .desktop-nav nav a {
+    text-decoration: none;
+    color: black;
+  }
+  .desktop-nav nav a:hover {
+    color: #6d3a77;
+  }
+  
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+  }
+  
+  .mobile-header .logo-mobile {
+    width: 100px;
+    height: 50px;
+  }
+  
+  .menu-btn {
+    font-size: 24px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu {
+    position: fixed;
+    inset: 0;
+    background-color: white;
+    z-index: 50;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  
+  .close-btn {
+    font-size: 24px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .mobile-nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .mobile-nav .quote-btn {
+    border: 2px solid black;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* Show desktop header on larger screens */
+  @media (min-width: 768px) {
+    .desktop-header {
+      display: flex;
+    }
+    .mobile-header {
+      display: none;
+    }
+  }
+  
