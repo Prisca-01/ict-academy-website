@@ -26,7 +26,7 @@ function Header() {
 
       {/* Mobile Header */}
       <div className="mobile-header">
-        <img src="/logo.png" alt="logo" className="logo-mobile" />
+        <img src="src/assets/logo.png" alt="logo" className="logo-mobile" />
         <button className="menu-btn" onClick={() => setIsOpen(true)} aria-label="Open Menu">
           ☰
         </button>
@@ -36,7 +36,7 @@ function Header() {
       {isOpen && (
         <div className="mobile-menu">
           <div className="mobile-menu-header">
-            <img src="/logo.png" alt="logo" className="logo-mobile" />
+            <img src="src/assets/logo.png" alt="logo" className="logo-mobile" />
             <button
               className="close-btn"
               onClick={() => setIsOpen(false)}

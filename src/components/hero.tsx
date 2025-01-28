@@ -1,22 +1,76 @@
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import { motion } from "motion/react";
+import "./styles/header.css";
 
 function Hero() {
-  const headingRef = useRef(null);
-
-  useEffect(() => {
-    gsap.from(headingRef.current, {
-      opacity: 1,
-      y: -50,
-      duration: 5,
-      ease: "power1.out",
-    });
-  }, []);
-
   return (
-    <div style={{ textAlign: "center", padding: "20px" }}>
-      <h1 ref={headingRef}>Welcome to ICT Academy</h1>
-    </div>
+    
+    <motion.section
+      className="hero"
+      // initial={{ opacity: 0, y: 20 }}
+      // animate={{ opacity: 1, y: 0 }}
+      // transition={{ duration: 1.5 }}
+      initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.4,
+                scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+            }}
+    >
+      <div className="hero-left">
+        <motion.div
+          className="moving-lines"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.2 }}
+        ></motion.div>
+        <div className="content">
+  <motion.div
+    initial={{ opacity: 0, x: -50 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ duration: 1, delay: 0.4 }}
+  >
+    <p className="rate">HIGHLY RATED ON GOOGLE</p>
+  </motion.div>
+  <motion.div
+    initial={{ opacity: 0, x: -50 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ duration: 1 }}
+  >
+    <h1>Start Your ICT</h1>
+  </motion.div>
+  <motion.div
+    initial={{ opacity: 0, x: -50 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ duration: 1, delay: 0.4 }}
+  >
+    <p className="career">Career With US</p>
+  </motion.div>
+  <motion.div
+    initial={{ opacity: 0, x: -50 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ duration: 1, delay: 0.4 }}
+  >
+    <p>An Award Winning ICT Academy</p>
+  </motion.div>
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, delay: 0.4 }}
+  >
+    <button>Get Started</button>
+  </motion.div>
+</div>
+
+      </div>
+      <motion.div
+        className="hero-right"
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.5 }}
+      >
+        <img src="src/assets/student.png" alt="Hero Image" />
+      </motion.div>
+    </motion.section>
   );
 }
 
