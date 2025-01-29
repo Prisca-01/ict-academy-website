@@ -1,0 +1,97 @@
+#welcome *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#welcome{
+    display: grid;
+    height: 600px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 8rem;
+    padding: 0 28px;
+
+}
+.images{
+    position: relative;
+
+}
+.welcome-big{
+    width: 70% !important;
+    height: 100% !important;
+    object-fit: cover;
+    padding-left: 56px !important;
+}
+.welcome-small {
+    position: absolute;
+    top: 230px;
+    right: 50px;
+    width: 40% !important;
+    height: 320px !important;
+    object-fit: cover;
+}
+.students{
+    position: absolute;
+    background-color: #ffffff;
+    padding: 15px 30px !important;
+    bottom: 120px !important;
+    left: 200px;
+    border-radius: 8px;
+    
+}
+.number{
+    color: #6d3a77;
+    font-size: 3rem;
+    font-weight: bold;  
+}
+ .text{
+    color: #6d3a77;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.texts{
+    padding: 38px 0 !important;
+    display: flex;
+    flex-direction: column;
+}
+/* Button */
+.animated-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px !important;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #6d3a77;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .animated-btn .button-text {
+    position: relative;
+    z-index: 2;
+    transition: color 0.4s ease;
+  }
+  
+  
+  .animated-btn .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(13, 14, 61);
+    z-index: 1;
+    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+    transition: clip-path 0.4s ease-in-out;
+  }
+  
+  .animated-btn:hover .button-text{
+    color: #fff;
+  }
