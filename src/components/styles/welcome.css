@@ -15,7 +15,6 @@
 }
 .images{
     position: relative;
-
 }
 .welcome-big{
     width: 70% !important;
@@ -56,8 +55,34 @@
     display: flex;
     flex-direction: column;
 }
+.texts .margin{
+    margin-top: 60px !important;
+}
+
+.texts .welcometo{
+    color: #6d3a77;
+    font-size: 2.5rem;
+}
+.texts h2 {
+    color: #0f0c0c;
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+.texts .margin .hr{
+    width: 550px ;
+    height: 1px;
+    background-color: #e4e4e4;
+    border: none;
+    /* margin-top: 40px ; */
+}
+.texts p{
+    color: #0f0c0cb2;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
 /* Button */
-.animated-btn {
+.animated-button {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -71,16 +96,17 @@
     border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
+    margin-top: 40px !important;
   }
   
-  .animated-btn .button-text {
+  .animated-button .button-text {
     position: relative;
     z-index: 2;
     transition: color 0.4s ease;
   }
   
   
-  .animated-btn .overlay {
+  .animated-button .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -92,6 +118,6 @@
     transition: clip-path 0.4s ease-in-out;
   }
   
-  .animated-btn:hover .button-text{
+  .animated-button:hover .button-text{
     color: #fff;
   }
