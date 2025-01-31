@@ -202,6 +202,9 @@
   .hero {
     height: 70vh;
   }
+  .content{
+    padding-left: 15px;
+  }
 
   .hero-right {
     display: none !important;
@@ -214,10 +217,10 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  color: #ffffff;
   padding: 15px 20px;
   font-size: 16px;
   font-weight: bold;
-  color: #ffffff !important;
   background-color: #6d3a77;
   border: none;
   border-radius: 8px;
@@ -228,6 +231,7 @@
 .animated-btn .text {
   position: relative;
   z-index: 2;
+  text-align: center;
   transition: color 0.4s ease;
   color: #ffffff;
 }

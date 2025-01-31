@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import "./styles/header.css";
+import "../styles/header.css";
 import Counter from "./counter";
 import { FaArrowRight } from "react-icons/fa";
 

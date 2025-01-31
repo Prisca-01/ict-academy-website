@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import "./styles/welcome.css";
+import "../styles/welcome.css";
 
 function Welcome() {
   return (

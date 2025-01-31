@@ -1,9 +1,3 @@
-#welcome *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
 
 #welcome{
     display: grid;
@@ -11,30 +5,67 @@
     grid-template-columns: 1fr 1fr;
     margin-top: 8rem;
     padding: 0 28px;
-
 }
+@media(max-width: 767px) {
+    #welcome{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 0 15px;
+    }
+    .images{
+        height: 650px;
+    }
+    
+ 
+    .texts{
+        padding: 20px 0;
+    }
+    .texts .margin{
+        margin-top: 20px;
+    }
+    .texts .welcometo{
+        font-size: 2rem;
+    }
+    .texts h2{
+        font-size: 2.2rem;
+    }
+    .texts .margin .hr{
+        width: 100%;
+    }
+    .texts p{
+        font-size: 1rem;
+    }
+}
+
 .images{
     position: relative;
 }
 .welcome-big{
-    width: 70% !important;
-    height: 100% !important;
-    object-fit: cover;
-    padding-left: 56px !important;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    /* padding-left: 56px; */
 }
 .welcome-small {
     position: absolute;
     top: 230px;
     right: 50px;
-    width: 40% !important;
-    height: 320px !important;
+    width: 40% ;
+    height: 320px ;
     object-fit: cover;
 }
-.students{
+.students *{
+    margin: 0;
+    padding: 0;
+}
+ .students{
     position: absolute;
     background-color: #ffffff;
-    padding: 15px 30px !important;
-    bottom: 120px !important;
+    padding: 20px 30px;
+    /* width: 100%;
+    max-width: 180px; */
+    bottom: 120px;
     left: 200px;
     border-radius: 8px;
     
@@ -47,16 +78,20 @@
  .text{
     color: #6d3a77;
     font-size: 1rem;
+    margin-top: 10px;
     font-weight: bold;
 }
-
+.texts *{
+    margin: 0;
+    padding: 0;
+}
 .texts{
-    padding: 38px 0 !important;
-    display: flex;
-    flex-direction: column;
+    padding: 40px 0;
+    /* display: flex;
+    flex-direction: column; */
 }
 .texts .margin{
-    margin-top: 60px !important;
+    margin-top: 60px;
 }
 
 .texts .welcometo{
@@ -73,13 +108,12 @@
     height: 1px;
     background-color: #e4e4e4;
     border: none;
-    /* margin-top: 40px ; */
 }
 .texts p{
     color: #0f0c0cb2;
     font-size: 1.2rem;
     font-weight: 400;
-    margin-top: 20px;
+    line-height: 1.8rem;
 }
 /* Button */
 .animated-button {
@@ -87,7 +121,7 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding: 15px 20px !important;
+    padding: 15px 20px;
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
@@ -96,12 +130,13 @@
     border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
-    margin-top: 40px !important;
+    margin-top: 40px;
   }
   
   .animated-button .button-text {
     position: relative;
     z-index: 2;
+    text-transform: uppercase;
     transition: color 0.4s ease;
   }
   
