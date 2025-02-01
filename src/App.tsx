@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Welcome from "./components/welcome";
+import Featured from "./components/featured";
 function App() {
 
   return (
@@ -15,6 +16,9 @@ function App() {
     </section>
     <section>
     <Welcome/>
+    </section>
+    <section>
+      <Featured/>
     </section>
     <div style={{ textAlign: "center", padding: "20px" }}>
       <motion.h1
