@@ -1,8 +1,4 @@
-/* 
-#featured *{
-    margin: 0;
-    padding: 0;
-} */
+
 #featured{
     background-color: #f9ddff;
     padding: 20px 28px;
@@ -28,6 +24,7 @@
     color: #6d3a77;
     font-size: 2.5rem;
     font-weight: bold;
+    text-align: center;
 }
 #line{
     width: 45%;
@@ -37,14 +34,14 @@
 }
 
 #courses .physical{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 10px;
     margin-top: 40px;
-    padding: 0 28px;
+    /* padding: 0 28px; */
 }
 #courses .physical .course-card {
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -94,10 +91,53 @@
     border-radius: 4px;
     width: 150px;
     cursor: pointer;
-    /* display: flex;
-    align-items: center;
-    justify-items: center; */
     gap: 8px;
     overflow: hidden;
+  }
+
+  .course-row1 {
+    display: flex;  
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    margin: 40px 0;
+  }
+  
+
+  .course-row2 {
+    display: flex;  
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    margin: 40px 0;
+  }
+  
+  @media (max-width: 767px) {
+
+    #featured {
+      padding: 10px 15px;
+      margin-top: 4rem;
+    }
+  
+
+    #courses .physical {
+      padding: 0;
+      margin-top: 20px;
+    }
+  
+
+    #courses .physical .course-card {
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+      margin: 0 auto;
+    }
+  
+    .course-row1,
+    .course-row2 {
+      flex-direction: column;
+      gap: 16px;
+      margin: 20px 0;
+    }
   }
   

@@ -6,37 +6,6 @@
     margin-top: 6rem;
     padding: 0 28px;
 }
-@media(max-width: 767px) {
-    #welcome{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        padding: 0 15px;
-    }
-    .images{
-        height: 650px;
-    }
-    
- 
-    .texts{
-        padding: 20px 0;
-    }
-    .texts .margin{
-        margin-top: 20px;
-    }
-    .texts .welcometo{
-        font-size: 2rem;
-    }
-    .texts h2{
-        font-size: 2.2rem;
-    }
-    .texts .margin .hr{
-        width: 100%;
-    }
-    .texts p{
-        font-size: 1rem;
-    }
-}
 
 .images{
     position: relative;
@@ -156,3 +125,35 @@
   .animated-button:hover .button-text{
     color: #fff;
   }
+
+  @media(max-width: 767px) {
+    #welcome{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 0 15px;
+    }
+    .images{
+        height: 650px;
+    }
+    
+ 
+    .texts{
+        padding: 20px 0;
+    }
+    .texts .margin{
+        margin-top: 20px;
+    }
+    .texts .welcometo{
+        font-size: 2rem;
+    }
+    .texts h2{
+        font-size: 2.2rem;
+    }
+    .texts .margin .hr{
+        width: 97%;
+    }
+    .texts p{
+        font-size: 1rem;
+    }
+}
