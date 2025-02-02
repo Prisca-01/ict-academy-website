@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { FaArrowCircleRight, FaBook } from "react-icons/fa";
 import "../styles/styles.css";
+import Online from "./online";
 
 function Featured() {
   return (
@@ -20,146 +21,146 @@ function Featured() {
         </div>
         <section id="courses">
           <div className="physical">
-          <motion.div
+            <motion.div
               className="course-row1"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6 }}
             >
-            <div className="course-card">
-              <motion.div
-                className="course-image-container"
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                  duration: 0.4,
-                  scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
-                }}
-                // whileHover={{ scale: 0.95 }}  // Zoom-out effect on hover
-              >
-                <img
-                  src="src/assets/basic.png"
-                  alt="Basic Computer"
-                  className="course-image"
-                />
-              </motion.div>
+              <div className="course-card">
+                <motion.div
+                  className="course-image-container"
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 0.4,
+                    scale: { type: "spring", visualDuration: 0.4, bounce: 0.6 },
+                  }}
+                  // whileHover={{ scale: 0.95 }}  // Zoom-out effect on hover
+                >
+                  <img
+                    src="src/assets/basic.png"
+                    alt="Basic Computer"
+                    className="course-image"
+                  />
+                </motion.div>
 
-              <motion.h3
-                className="course-title"
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, delay: 0.4 }}
-              >
-                Basic Computer Training
-              </motion.h3>
+                <motion.h3
+                  className="course-title"
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1, delay: 0.4 }}
+                >
+                  Basic Computer Training
+                </motion.h3>
 
-              <p className="course-description">
-                Our Academy offers Basic Computer Training for beginners. This
-                course is designed to help you understand the basics of computer
-                operations.
-              </p>
+                <p className="course-description">
+                  Our Academy offers Basic Computer Training for beginners. This
+                  course is designed to help you understand the basics of
+                  computer operations.
+                </p>
 
-              <motion.button
-                className="course-button"
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <FaArrowCircleRight /> Learn more
-              </motion.button>
-            </div>
+                <motion.button
+                  className="course-button"
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <FaArrowCircleRight /> Learn more
+                </motion.button>
+              </div>
 
-            {/* 2 */}
-            <div className="course-card">
-              <motion.div
-                className="course-image-container"
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                  duration: 0.4,
-                  scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
-                }}
-                // whileHover={{ scale: 0.95 }}  // Zoom-out effect on hover
-              >
-                <img
-                  src="src/assets/basic.png"
-                  alt="Basic Computer"
-                  className="course-image"
-                />
-              </motion.div>
+              {/* 2 */}
+              <div className="course-card">
+                <motion.div
+                  className="course-image-container"
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 0.4,
+                    scale: { type: "spring", visualDuration: 0.4, bounce: 0.6 },
+                  }}
+                  // whileHover={{ scale: 0.95 }}  // Zoom-out effect on hover
+                >
+                  <img
+                    src="src/assets/basic.png"
+                    alt="Basic Computer"
+                    className="course-image"
+                  />
+                </motion.div>
 
-              <motion.h3
-                className="course-title"
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, delay: 0.4 }}
-              >
-                Graphic Design Training
-              </motion.h3>
+                <motion.h3
+                  className="course-title"
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1, delay: 0.4 }}
+                >
+                  Graphic Design Training
+                </motion.h3>
 
-              <p className="course-description">
-                Our Academy offers Graphic Design Training for beginners. This
-                course is designed to help you understand the basics of graphic
-                design.
-              </p>
+                <p className="course-description">
+                  Our Academy offers Graphic Design Training for beginners. This
+                  course is designed to help you understand the basics of
+                  graphic design.
+                </p>
 
-              <motion.button
-                className="course-button"
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <FaArrowCircleRight /> Learn more
-              </motion.button>
-            </div>
+                <motion.button
+                  className="course-button"
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <FaArrowCircleRight /> Learn more
+                </motion.button>
+              </div>
 
-            {/* 3 */}
-            <div className="course-card">
-              <motion.div
-                className="course-image-container"
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                  duration: 0.4,
-                  scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
-                }}
-                // whileHover={{ scale: 0.95 }}  // Zoom-out effect on hover
-              >
-                <img
-                  src="src/assets/basic.png"
-                  alt="product design"
-                  className="course-image"
-                />
-              </motion.div>
+              {/* 3 */}
+              <div className="course-card">
+                <motion.div
+                  className="course-image-container"
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 0.4,
+                    scale: { type: "spring", visualDuration: 0.4, bounce: 0.6 },
+                  }}
+                  // whileHover={{ scale: 0.95 }}  // Zoom-out effect on hover
+                >
+                  <img
+                    src="src/assets/basic.png"
+                    alt="product design"
+                    className="course-image"
+                  />
+                </motion.div>
 
-              <motion.h3
-                className="course-title"
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, delay: 0.4 }}
-              >
-                UI/UX Design Training
-              </motion.h3>
+                <motion.h3
+                  className="course-title"
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1, delay: 0.4 }}
+                >
+                  UI/UX Design Training
+                </motion.h3>
 
-              <p className="course-description">
-                Our Academy offers Product Design Training for beginners. This
-                course is designed to help you understand the basics of computer
-                operations.
-              </p>
+                <p className="course-description">
+                  Our Academy offers Product Design Training for beginners. This
+                  course is designed to help you understand the basics of
+                  computer operations.
+                </p>
 
-              <motion.button
-                className="course-button"
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <FaArrowCircleRight /> Learn more
-              </motion.button>
-            </div>
+                <motion.button
+                  className="course-button"
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <FaArrowCircleRight /> Learn more
+                </motion.button>
+              </div>
             </motion.div>
             <motion.div
               className="course-row2"
@@ -176,7 +177,7 @@ function Featured() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{
                     duration: 0.4,
-                    scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+                    scale: { type: "spring", visualDuration: 0.4, bounce: 0.6 },
                   }}
                   // whileHover={{ scale: 0.95 }}  // Zoom-out effect on hover
                 >
@@ -221,7 +222,7 @@ function Featured() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{
                     duration: 0.4,
-                    scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+                    scale: { type: "spring", visualDuration: 0.4, bounce: 0.6 },
                   }}
                   // whileHover={{ scale: 0.95 }}  // Zoom-out effect on hover
                 >
@@ -266,7 +267,7 @@ function Featured() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{
                     duration: 0.4,
-                    scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+                    scale: { type: "spring", visualDuration: 0.4, bounce: 0.6 },
                   }}
                   // whileHover={{ scale: 0.95 }}  // Zoom-out effect on hover
                 >
@@ -305,6 +306,9 @@ function Featured() {
             </motion.div>
           </div>
         </section>
+      </section>
+      <section>
+        <Online />
       </section>
     </>
   );
