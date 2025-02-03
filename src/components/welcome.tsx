@@ -12,7 +12,7 @@ function Welcome() {
             className="welcome-big"
           />
           <img
-            src="src/assets/student.png"
+            src="src/assets/coder.png"
             alt="logo"
             className="welcome-small"
           />

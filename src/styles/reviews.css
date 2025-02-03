@@ -7,10 +7,6 @@
     padding: 0 28px;
     margin-top: 4rem;
 }
-/* #reviews .first *{
-    margin: 0;
-    padding: 0;
-} */
 #reviews .first {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -20,7 +16,8 @@
 }
 
 /* Images Section */
-.images {
+
+#reviews .images {
     position: relative;
     flex: 1;
     margin-top: 50px;
@@ -28,7 +25,7 @@
     top: 180px;
 }
 
-.students {
+#reviews .students {
     width: 100%;
     height: 350px;
     object-fit: cover;
@@ -206,3 +203,155 @@ background: none;
         flex-direction: column;
     }
 }
+
+
+.google-reviews {
+    background-color: #fff;
+    padding: 20px 28px;
+    margin-top: 6rem;
+  }
+  .google-reviews .heading * {
+    margin: 0;
+    padding: 0;
+  }
+  .google-reviews .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .google-reviews .heading .google {
+    font-size: 2rem;
+    color: #023535;
+  }
+  .google-reviews .heading .google span *{
+    margin: 0;
+    padding: 0;
+  }
+  .google-reviews .heading .google span {
+    margin-right: 5px;
+  }
+  .google-reviews .heading .second {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .google-reviews .heading .second span {
+    color: #023535;
+    font-size: 2.5rem;
+font-weight: lighter;
+  }
+  .google-reviews .stars-div *{
+    margin: 0;
+    padding: 0;
+  }
+  .google-reviews .stars-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6rem;
+  }
+  .google-reviews .stars-div .stars{
+    color: #c28e00;
+    font-size: 1.8rem;
+  }
+  .google-reviews .stars-div  .spans{
+    font-size: 1.8rem;
+  }
+
+
+  /*  */
+  .review-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.8rem;
+  }
+  
+  .review-wrapper {
+    overflow: hidden;
+  }
+  
+  .review-cards {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 3rem;
+  }
+  
+  .card {
+    flex: 0 0 300px;
+    background: #dcf7f7;
+    border-radius: 12px;
+    padding: 1.5rem;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-header .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .header-text p:first-child {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .header-text p:last-child {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .stars {
+    display: flex;
+    gap: 0.25rem;
+    color: #ffd700;
+    margin-bottom: 1rem;
+  }
+  
+  .google-icon {
+    position: absolute;
+    bottom: 1rem;
+    top: 2rem;
+    right: 1rem;
+    width: 24px;
+    height: 24px;
+    fill: #4285f4;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    color: #949e9e;
+    /* box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
+    cursor: pointer;
+    z-index: 10;
+    padding: 0 3rem;
+  }
+  
+  .carousel-button.left { left: -20px; }
+  .carousel-button.right { right: -20px; }
+  .google-reviews .review-cards .card-body .stars{
+    color: #c28e00;
+    font-size: 1.5rem;
+  }
