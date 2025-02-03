@@ -241,3 +241,12 @@
     color: #023535;
     font-weight: bold;
   }
+
+  .copyright{
+    background-color: #023535;
+  }
+  .copyright{
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+  }
