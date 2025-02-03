@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Hero from "./components/hero";
 import Welcome from "./components/welcome";
 import Featured from "./components/featured";
+import Reviews from "./components/reviews";
 function App() {
 
   return (
@@ -19,6 +20,9 @@ function App() {
     </section>
     <section>
       <Featured/>
+    </section>
+    <section>
+      <Reviews/>
     </section>
     <div style={{ textAlign: "center", padding: "20px" }}>
       <motion.h1

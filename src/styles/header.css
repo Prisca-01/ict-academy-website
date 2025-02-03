@@ -122,7 +122,8 @@
 }
 
 .hero-left {
-  background-color: #2d1133;
+  /* background-color: #2d1133; */
+  background-color: #031414;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -167,7 +168,7 @@
 }
 
 .content .rate {
-  background-color: #6d3a77;
+  background-color: #023535;
   color: #ffffff;
   width: 250px;
 }
@@ -221,7 +222,7 @@
   padding: 15px 20px;
   font-size: 16px;
   font-weight: bold;
-  background-color: #6d3a77;
+  background-color: #023535;
   border: none;
   border-radius: 8px;
   overflow: hidden;
