@@ -1,8 +1,9 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { FaStar, FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "../styles/reviews.css";
-const reviews = Array(7).fill({
+
+const reviews = Array(9).fill({
   name: "Jane Doe",
   date: "5 days ago",
   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, quidem.",
@@ -10,9 +11,23 @@ const reviews = Array(7).fill({
 
 export function ReviewCards() {
   const [current, setCurrent] = useState(0);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [containerWidth, setContainerWidth] = useState(0);
 
   const handleNext = () => setCurrent((prev) => (prev + 1) % reviews.length);
   const handlePrev = () => setCurrent((prev) => (prev - 1 + reviews.length) % reviews.length);
+
+  useEffect(() => {
+    const updateWidth = () => {
+      if (containerRef.current) {
+        setContainerWidth(containerRef.current.offsetWidth);
+      }
+    };
+    
+    updateWidth();
+    window.addEventListener('resize', updateWidth);
+    return () => window.removeEventListener('resize', updateWidth);
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(handleNext, 5000);
@@ -20,7 +35,7 @@ export function ReviewCards() {
   }, []);
 
   return (
-    <div className="review-container">
+    <div className="review-container" ref={containerRef}>
       <button className="carousel-button left" onClick={handlePrev}>
         <FaChevronLeft />
       </button>
@@ -28,14 +43,14 @@ export function ReviewCards() {
       <div className="review-wrapper">
         <motion.div
           className="review-cards"
-          animate={{ x: -current * 320 }}
+          animate={{ x: -current * (containerWidth + 290) }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
         >
           {reviews.map((review, index) => (
             <motion.div
               key={index}
               className="card"
-              whileHover={{ y: -5, boxShadow: "0 10px 20px rgba(0,0,0,0.1)" }}
+              whileHover={{ y: window.innerWidth > 768 ? -5 : 0 }}
             >
               <div className="card-header">
                 <img className="avatar" src="src/assets/avatar.jpeg" alt="avatar" />
@@ -63,6 +78,16 @@ export function ReviewCards() {
       <button className="carousel-button right" onClick={handleNext}>
         <FaChevronRight />
       </button>
+
+      <div className="dots-container">
+        {reviews.map((_, index) => (
+          <div 
+            key={index}
+            className={`dot ${index === current ? 'active' : ''}`}
+            onClick={() => setCurrent(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 }
