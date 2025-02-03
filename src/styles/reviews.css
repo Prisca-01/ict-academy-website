@@ -1,7 +1,4 @@
-/* #reviews *{
-    margin: 0;
-    padding: 0;
-} */
+
 #reviews {
     background-color: #fff;
     padding: 0 28px;
@@ -12,11 +9,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10rem;
-    max-width: 1200px;
-    /* margin: 0 auto; */
+    /* max-width: 1240px; */
 }
 
-/* Images Section */
 
 #reviews .images {
     position: relative;
@@ -42,7 +37,6 @@
     width: 180px;
     padding: 1.2rem;
     border-radius: 12px;
-    /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
 }
 
 .overlay-header {
@@ -131,17 +125,14 @@
     margin-left: -15px;
 } */
 
-/* Best Section */
 .best * {
     margin: 0;
     padding: 0;
 }
 
 .best {
-    /* flex: 1; */
     display: flex;
     flex-direction: column;
-    /* gap: 2rem; */
     padding-top: 2rem;
 }
 
@@ -278,10 +269,9 @@
 }
 
 
-/*  */
 .review-container {
     position: relative;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 2rem auto;
     padding: 0 2rem;
 }
@@ -383,10 +373,13 @@
 @media (max-width: 768px) {
     .review-container {
         padding: 0 1rem;
+        overflow: hidden;
     }
 
     .review-wrapper {
         overflow: visible;
+        width: 100vw;
+        margin-left: -1rem;
     }
 
     .carousel-button {
@@ -394,18 +387,20 @@
     }
 
     .review-cards {
-        padding: 0;
         gap: 0;
+        padding: 0;
+        width: 100%; /* Change this */
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
+        scroll-padding: 0 1rem; /* Add this */
     }
 
     .card {
         flex: 0 0 calc(100% - 2rem);
+        width: calc(100% - 2rem); /* Replace fixed width */
         margin: 0 1rem;
-        width: 650px;
-        scroll-snap-align: center;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        scroll-snap-align: start; /* Change to start */
+        box-sizing: border-box; /* Add this */
     }
 
     .dots-container {
@@ -413,6 +408,7 @@
         justify-content: center;
         gap: 0.75rem;
         margin-top: 1.5rem;
+        padding: 0 1rem;
     }
 
     .dot {
@@ -428,3 +424,58 @@
         background: #4285f4;
     }
 }
+/* Counter Section */
+.counter-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem auto;
+    background-color: #023535;
+    gap: 2rem;
+    flex-wrap: wrap;
+    height: 200px;
+    align-items: center;
+  }
+  .counter-row .vertical-line{
+    width: 1px;
+    height: 100%;
+    background-color: #c28e00;
+
+  }
+  .counter-column {
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .counter-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .counter-label {
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 150px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .counter-row {
+      flex-direction: column;
+      gap: 3rem;
+      padding: 2rem 0;
+    }
+  
+    .counter-number {
+      font-size: 2rem;
+    }
+  
+    .counter-label {
+      font-size: 1rem;
+    }
+    .counter-row .vertical-line{
+        display: none;
+    }
+  }

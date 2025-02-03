@@ -1,25 +1,70 @@
-"use client"
+// "use client"
 
-import { animate, motion, useMotionValue, useTransform } from "motion/react"
-import { useEffect } from "react"
+// import { animate, motion, useMotionValue, useTransform } from "motion/react"
+// import { useEffect } from "react"
 
-export default function Counter() {
-    const count = useMotionValue(0)
-    const rounded = useTransform(() => Math.round(count.get()))
+// export default function Counter() {
+//     const count = useMotionValue(0)
+//     const rounded = useTransform(() => Math.round(count.get()))
 
-    useEffect(() => {
-        const controls = animate(count, 200, { duration: 4 })
-        return () => controls.stop()
-    }, [])
+//     useEffect(() => {
+//         const controls = animate(count, 200, { duration: 4 })
+//         return () => controls.stop()
+//     }, [])
 
-    return <motion.pre style={text}>{rounded}</motion.pre>
+//     return <motion.pre style={text}>{rounded}</motion.pre>
+// }
+
+
+
+// const text = {
+//     fontSize: 64,
+//     color: "#4ff0b7",
+// }
+
+
+import { animate, motion, useMotionValue, useTransform } from "framer-motion";
+import { useEffect } from "react";
+
+interface CounterProps {
+  targetNumber: number;
+  label: string;
+  suffix?: string;
+  style?: React.CSSProperties;
+
 }
 
-/**
- * ==============   Styles   ================
- */
+function Counter({ targetNumber, label, suffix = "" , style}: CounterProps) {
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, (value) => 
+    Math.round(value) + suffix
+  );
 
-const text = {
-    fontSize: 64,
-    color: "#4ff0b7",
+  useEffect(() => {
+    const controls = animate(count, targetNumber, {
+      duration: 6,
+      ease: "easeOut"
+    });
+    return () => controls.stop();
+  }, [targetNumber, count]);
+
+  return (
+    <div className="counter-column " style={style}>
+      <motion.div className="counter-number">{rounded}</motion.div>
+      <div className="counter-label">{label}</div>
+    </div>
+  );
 }
+
+{/* <div className="counter-row">
+<Counter
+  targetNumber={5000}
+  label="Successfully Trained"
+  suffix="+"
+/>
+<Counter targetNumber={3500} label="Classes Held" suffix="+" />
+<Counter targetNumber={96} label="Satisfaction Rate" suffix="%" />
+<Counter targetNumber={90} label="Success Rate" suffix="%+" />
+</div> */}
+
+export default Counter;

@@ -3,7 +3,7 @@ import { FaStar, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useState, useEffect, useRef } from "react";
 import "../styles/reviews.css";
 
-const reviews = Array(9).fill({
+const reviews = Array(8).fill({
   name: "Jane Doe",
   date: "5 days ago",
   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, quidem.",

@@ -1,0 +1,243 @@
+.brands {
+  background-color: #fff;
+  padding: 20px 28px;
+  margin-top: 6rem;
+}
+
+.brands .heading * {
+  margin: 0;
+  padding: 0;
+}
+
+.brands .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.brands .heading .trust {
+  font-size: 1.2rem;
+  color: #023535;
+}
+
+.brands .heading .trust span * {
+  margin: 0;
+  padding: 0;
+}
+
+.brands .heading .trust span {
+  margin-right: 5px;
+}
+
+.brands .heading .second {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.brands .heading .second span {
+  color: #023535;
+  font-size: 2.2rem;
+  font-weight: lighter;
+}
+.brands .brand-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.3rem;
+  margin-top: 4rem;
+  padding-left: 8rem;
+}
+
+.brands .brand-logos img {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .brands .brand-logos {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 3rem;
+    padding-right: 0;
+  }
+  .brands .brand-logos img {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.footer {
+  background-color: #110235;
+  color: #fff;
+  padding: 2rem 0;
+  margin: 4rem auto 0;
+}
+.footer .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+.footer .top .phone .vertical-line{
+    width: 1px;
+    height: 100%;
+    background-color: #255aa0;
+}
+.footer .top .phone,
+.footer .top .email,
+.footer .top .social {
+  display: flex;
+  align-items: center;
+}
+.top .phone .icon,
+.top .email .icon,
+.top .social .icon {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-right: 1rem;
+  background-color: #102abe;
+  border: 1px solid #be1c10;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.top .phone .txt *,
+.top .email .txt *,
+.top .social .txt * {
+  margin: 0;
+  padding: 0;
+}
+
+.top .phone .txt
+.top .email .txt,
+.top .social .txt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.top .phone .txt > p:first-child,
+.top .email .txt > p:first-child,
+.top .social .txt > p:first-child {
+  font-size: 1rem;
+  color: #7a807f;
+}
+.top .phone .txt > p:last-child,
+
+.top .email .txt > p:last-child{
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.footer .social .icons .icon {
+  font-size: 1rem;
+  color: #fff;
+  margin-right: 1rem;
+  background-color: #102abe;
+  border-radius: 50%;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+}
+.footer .bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+    margin-top: 7rem;
+  }
+  
+  .footer .horizontal-line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ebf3fd;
+    margin: 1rem 0;
+  }
+  
+  .footer .bottom .two p:not(.head),
+  .footer .bottom .three p:not(:first-child),
+  .footer .bottom .four p:not(.head) {
+    color: #afc9c4;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .footer .bottom .two p:not(.head):hover,
+  .footer .bottom .three p:not(:first-child):hover,
+  .footer .bottom .four p:not(.head):hover {
+    color: #fff !important;
+  }
+  
+  @media (max-width: 768px) {
+    .footer .bottom {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      padding: 0 1rem;
+    }
+  
+    .footer .bottom > div {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .footer .horizontal-line {
+      margin: 1rem auto;
+      width: 80%;
+    }
+  
+    .footer .bottom .two {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .footer .bottom .three,
+    .footer .bottom .four {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .footer .bottom .one p {
+    font-size: 1rem;
+    color: #afc9c4;
+    line-height: 1.6rem;
+  }
+  
+  .footer .bottom .two .head {
+    color: #023535;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+  .footer .bottom .two .marketing .phone,
+  .footer .bottom .two .marketing > p:last-child,
+  .footer .bottom .two .feedback .phone, 
+  .footer .bottom .two .feedback > p:last-child {
+    font-size: 1rem;
+    color: #afc9c4;
+    margin-top: 1rem;
+  }
+  
+  .footer .bottom .three p,
+  .footer .bottom .four p {
+    margin: 0.5rem 0;
+  }
+  
+  .footer .bottom .four button {
+    background: #023535;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
+  .footer .bottom .four span {
+    color: #023535;
+    font-weight: bold;
+  }

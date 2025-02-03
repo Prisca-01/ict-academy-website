@@ -5,6 +5,8 @@ import Hero from "./components/hero";
 import Welcome from "./components/welcome";
 import Featured from "./components/featured";
 import Reviews from "./components/reviews";
+import Footer from "./components/footer";
+
 function App() {
 
   return (
@@ -24,6 +26,10 @@ function App() {
     <section>
       <Reviews/>
     </section>
+    <section>
+      <Footer/>
+    </section>
+   
     <div style={{ textAlign: "center", padding: "20px" }}>
       <motion.h1
         initial={{ opacity: 0, y: -50 }}

@@ -37,10 +37,8 @@
   flex-direction: column;
   gap: 10px;
   margin-top: 40px;
-  /* padding: 0 28px; */
 }
 #courses .physical .course-card {
-  /* padding: 20px; */
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -140,7 +138,6 @@
 
 #online-featured {
   background-color: #023535;
-  /* background-color: rgb(8, 121, 121); */
   padding: 20px 28px;
 }
 #online-heading * {

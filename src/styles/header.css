@@ -107,7 +107,6 @@
 /* hero css */
 .hero {
   display: flex;
-  /* height: 100vh; */
   height: 600px;
   width: 100%;
   padding-top: 2rem;
@@ -122,7 +121,6 @@
 }
 
 .hero-left {
-  /* background-color: #2d1133; */
   background-color: #031414;
   display: flex;
   position: relative;
@@ -262,3 +260,4 @@
 .animated-btn:hover .arrow {
   color: #000;
 }
+

@@ -1,6 +1,8 @@
 import { FaStar, FaBook, FaStarHalfAlt } from "react-icons/fa";
 import "../styles/reviews.css";
 import { ReviewCards } from "./reviewcards";
+import Counter from "./counter";
+
 function Reviews() {
   return (
     <>
@@ -81,8 +83,7 @@ function Reviews() {
               <FaStar className="star" />
               <FaStar className="star" />
               <FaStar className="star" />
-              <FaStarHalfAlt 
-              className="star" />
+              <FaStarHalfAlt className="star" />
             </div>
             <p>
               Based on <span>50 reviews</span>
@@ -99,36 +100,17 @@ function Reviews() {
           <div>
             <ReviewCards />
           </div>
-          {/* <div className="review-cards">
-            <div className="card-one">
-              <div className="card-header">
-                <img
-                  className="avatar"
-                  src="src/assets/avatar.jpeg"
-                  alt="student"
-                />
-                <div className="header-text">
-                  <p>John Doe</p>
-                  <p>5 days ago</p>
-                </div>
-              </div>
-              <div className="card-body">
-                <div className="stars">
-                  <FaStar className="star" />
-                  <FaStar className="star" />
-                  <FaStar className="star" />
-                  <FaStar className="star" />
-                  <FaStar className="star" />
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Doloribus, quidem.
-                </p>
-              </div>
-            </div>
-          </div> */}
         </div>
       </section>
+      <div className="counter-row">
+        <Counter targetNumber={5000} label="Successfully Trained" suffix="+" />
+        <div className="vertical-line"></div>
+        <Counter targetNumber={3500} label="Classes Held" suffix="+" />
+        <div className="vertical-line"></div>
+        <Counter targetNumber={96} label="Satisfaction Rate" suffix="%" />
+        <div className="vertical-line"></div>
+        <Counter targetNumber={90} label="Success Rate" suffix="%" />
+      </div>
     </>
   );
 }
