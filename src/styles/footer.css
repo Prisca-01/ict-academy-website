@@ -70,9 +70,10 @@
 }
 
 .footer {
-  background-color: #110235;
+  background-color: #240129;
   color: #fff;
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
+  padding-bottom: 2rem;
   margin: 4rem auto 0;
 }
 .footer .top {
@@ -81,16 +82,18 @@
   align-items: center;
   padding: 0 2rem;
 }
-.footer .top .phone .vertical-line{
+.footer .top .vertical-line{
     width: 1px;
-    height: 100%;
-    background-color: #255aa0;
+    height: 70px;
+    padding: 0;
+    background-color: #023535;
 }
 .footer .top .phone,
 .footer .top .email,
 .footer .top .social {
   display: flex;
   align-items: center;
+  padding: 2rem;
 }
 .top .phone .icon,
 .top .email .icon,
@@ -147,11 +150,17 @@
     padding: 0 2rem;
     margin-top: 7rem;
   }
-  
-  .footer .horizontal-line {
+  .footer .long-line{
     display: block;
     width: 100%;
     height: 1px;
+    background-color: #023535;
+    /* margin: 1rem 0; */
+  }
+  .footer .horizontal-line {
+    display: block;
+    width: 25%;
+    height: 3px;
     background-color: #ebf3fd;
     margin: 1rem 0;
   }
@@ -171,6 +180,8 @@
   }
   
   @media (max-width: 768px) {
+    
+
     .footer .bottom {
       grid-template-columns: 1fr;
       gap: 3rem;
@@ -207,7 +218,9 @@
     line-height: 1.6rem;
   }
   
-  .footer .bottom .two .head {
+  .footer .bottom .two .head,
+  .footer .bottom .three .head,
+  .footer .bottom .four .head {
     color: #023535;
     font-size: 1.4rem;
     font-weight: bold;

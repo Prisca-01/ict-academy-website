@@ -11,25 +11,24 @@ function App() {
 
   return (
     <>
-    <div>
-      <Header />
-    </div>
-    <section>
-      <Hero />
-    </section>
-    <section>
-    <Welcome/>
-    </section>
-    <section>
-      <Featured/>
-    </section>
-    <section>
-      <Reviews/>
-    </section>
-    <section>
-      <Footer/>
-    </section>
-   
+  <div>
+        <Header />
+      </div>
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="welcome">
+        <Welcome />
+      </section>
+      <section id="featured">
+        <Featured />
+      </section>
+      <section id="reviews">
+        <Reviews />
+      </section>
+      <section id="footer">
+        <Footer />
+      </section>
     {/* <div style={{ textAlign: "center", padding: "20px" }}>
       <motion.h1
         initial={{ opacity: 0, y: -50 }}

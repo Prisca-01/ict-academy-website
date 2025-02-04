@@ -95,7 +95,7 @@ function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5 }}
         >
-          <img src="src/assets/programmer.png" alt="Hero Image" />
+          <img src="src/assets/professional.jpeg" alt="Hero Image" />
         </motion.div>
       </motion.section>
       

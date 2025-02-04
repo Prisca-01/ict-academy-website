@@ -71,7 +71,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="horizontal-line"></div>
+        <div className="long-line"></div>
         <div className="bottom">
           <div className="one">
             <img src="src/assets/logo.png" alt="logo" />
@@ -103,7 +103,7 @@ function Footer() {
             </div>
           </div>
           <div className="three">
-            <p>LINKS</p>
+            <p className="head">LINKS</p>
             <span className="horizontal-line"></span>
             <p>
               <FaArrowRight /> Online Courses
@@ -119,7 +119,7 @@ function Footer() {
             </p>
           </div>
           <div className="four">
-            <p>SPECIAL OFFER</p>
+            <p className="head">SPECIAL OFFER</p>
             <span className="horizontal-line"></span>
             <p>
               Get 50% Off on Your First Course. Use Code: <span>MYICT50</span>

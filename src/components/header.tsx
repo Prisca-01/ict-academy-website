@@ -1,6 +1,8 @@
 
 import { useState } from "react";
 import '../styles/header.css';
+// import { Link } from "react-scroll";
+
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,8 +18,8 @@ function Header() {
         </div>
         <div className="desktop-nav">
           <nav><a href="#">HOME</a></nav>
-          <nav><a href="#">OUR COURSES</a></nav>
-          <nav><a href="#">REVIEWS</a></nav>
+          {/* <nav><a href="#">OUR COURSES</a></nav> */}
+          {/* <nav><Link to="reviews" style={{cursor: "pointer"}} smooth={true} duration={500}>REVIEWS</ Link></nav> */}
           <nav><a href="#">BLOG</a></nav>
           <nav><a href="#">ABOUT US</a></nav>
           <nav><a href="#">CONTACT US</a></nav>
