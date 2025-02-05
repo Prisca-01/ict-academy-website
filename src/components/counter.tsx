@@ -56,15 +56,4 @@ function Counter({ targetNumber, label, suffix = "" , style}: CounterProps) {
   );
 }
 
-{/* <div className="counter-row">
-<Counter
-  targetNumber={5000}
-  label="Successfully Trained"
-  suffix="+"
-/>
-<Counter targetNumber={3500} label="Classes Held" suffix="+" />
-<Counter targetNumber={96} label="Satisfaction Rate" suffix="%" />
-<Counter targetNumber={90} label="Success Rate" suffix="%+" />
-</div> */}
-
 export default Counter;

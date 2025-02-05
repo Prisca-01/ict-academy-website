@@ -201,9 +201,6 @@
   .hero {
     height: 70vh;
   }
-  .content{
-    padding-left: 15px;
-  }
 
   .hero-right {
     display: none !important;

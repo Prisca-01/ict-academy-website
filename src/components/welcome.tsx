@@ -1,32 +1,43 @@
 import { motion } from "motion/react";
 import "../styles/welcome.css";
-
+import Counter from "./counter";
 function Welcome() {
   return (
-    <>
-      <section id="welcome">
-        <div className="images">
+    <section className="welcomeSection">
+      <div className="welcomeGrid">
+        <div className="welcomeMediaContainer">
           <img
-            src="src/assets/welcome.png"
-            alt="logo"
-            className="welcome-big"
+            src="src/assets/student.jpeg"
+            alt="Main welcome visual"
+            className="welcomeMainImage"
           />
           <img
             src="src/assets/coder.png"
-            alt="logo"
-            className="welcome-small"
+            alt="Coder illustration"
+            className="welcomeSecondaryImage"
           />
-          <div className="students">
-            <p className="number">800+</p>
-            <p className="text">SATISFIED STUDENTS</p>
-          </div>
+          <div className="studentStatsCard">
+  <Counter
+    targetNumber={800}
+    label="SATISFIED STUDENTS"
+    suffix="+"
+    // style={{ 
+    //   backgroundColor: '#ffffff',
+    //   padding: '20px 30px',
+    //   borderRadius: '8px',
+    //   color: '#000000',
+    //   textAlign: 'center'
+    // }}
+  />
+</div>
         </div>
-        <div className="texts">
-          <span className="welcometo">Welcome to</span>
-          <h2>My ICT Academy</h2>
-          <div className="margin">
-            <div className="hr"></div>
-            <p>
+
+        <div className="welcomeContent">
+          <span className="welcomePrefix">Welcome to</span>
+          <h2 className="welcomeTitle">My ICT Academy</h2>
+          <div className="contentDivider">
+            <div className="dividerLine"></div>
+            <p className="welcomeDescription">
               My ICT Academy is a leading online learning platform that helps
               anyone learn business, software, technology, and creative skills
               to achieve personal and professional goals. Through individual,
@@ -34,7 +45,7 @@ function Welcome() {
               access to the My ICT Academy video library of engaging,
               top-quality courses taught by recognized industry experts.
             </p>
-            <div className="hr"></div>
+            <div className="dividerLine"></div>
           </div>
 
           <motion.div
@@ -43,7 +54,7 @@ function Welcome() {
             transition={{ duration: 1, delay: 0.4 }}
           >
             <motion.button
-              className="animated-button"
+              className="ctaButton"
               whileHover="hover"
               initial="initial"
               variants={{
@@ -52,7 +63,7 @@ function Welcome() {
               }}
             >
               <motion.span
-                className="overlay"
+                className="buttonOverlay"
                 variants={{
                   hover: {
                     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
@@ -63,12 +74,13 @@ function Welcome() {
                   },
                 }}
               ></motion.span>
-              <span className="button-text">Learn more</span>
+              <span className="buttonLabel">Learn more</span>
             </motion.button>
           </motion.div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
+
 export default Welcome;
