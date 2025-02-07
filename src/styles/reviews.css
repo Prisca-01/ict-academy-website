@@ -216,11 +216,16 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    text-align: center;
 }
 
 .google-reviews .heading .google {
+    display: flex;
+    align-items: center;
+    justify-items: center;
     font-size: 2rem;
     color: #023535;
+    text-align: center;
 }
 
 .google-reviews .heading .google span * {
@@ -228,9 +233,9 @@
     padding: 0;
 }
 
-.google-reviews .heading .google span {
+/* .google-reviews .heading .google span {
     margin-right: 5px;
-}
+} */
 
 .google-reviews .heading .second {
     color: #000;
@@ -389,18 +394,18 @@
     .review-cards {
         gap: 0;
         padding: 0;
-        width: 100%; /* Change this */
+        width: 100%;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
-        scroll-padding: 0 1rem; /* Add this */
+        scroll-padding: 0 1rem;
     }
 
     .card {
         flex: 0 0 calc(100% - 2rem);
-        width: calc(100% - 2rem); /* Replace fixed width */
+        width: calc(100% - 2rem);
         margin: 0 1rem;
-        scroll-snap-align: start; /* Change to start */
-        box-sizing: border-box; /* Add this */
+        scroll-snap-align: start;
+        box-sizing: border-box;
     }
 
     .dots-container {

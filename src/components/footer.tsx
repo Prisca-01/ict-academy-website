@@ -4,10 +4,8 @@ import {
   FaArrowRight,
   FaBook,
   FaEnvelope,
-  FaInstagram,
   FaLinkedinIn,
   FaPhoneAlt,
-  FaPinterestP,
   FaSkating,
 } from "react-icons/fa";
 
@@ -52,7 +50,7 @@ function Footer() {
             <FaEnvelope className="icon" />
             <div className="txt">
               <p>Email</p>
-              <p>hello@myictacademy.com</p>
+              <p>prisca@myictacademy.com</p>
             </div>
           </div>
           <div className="vertical-line"></div>
@@ -65,8 +63,6 @@ function Footer() {
                 <FaFacebookF className="icon" />
                 <FaXTwitter className="icon" />
                 <FaLinkedinIn className="icon" />
-                <FaInstagram className="icon" />
-                <FaPinterestP className="icon" />
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import "../styles/header.css";
+import "../styles/hero.css";
 import { FaArrowRight } from "react-icons/fa";
 
 function Hero() {

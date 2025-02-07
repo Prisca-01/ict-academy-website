@@ -1,8 +1,6 @@
-
 import { useState } from "react";
-import '../styles/header.css';
+import "../styles/header.css";
 // import { Link } from "react-scroll";
-
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,23 +11,39 @@ function Header() {
       <div className="desktop-header">
         <div>
           <a href="#">
-            <img src="src/assets/logo.png" alt="logo" className="logo-desktop" />
+            <img
+              src="src/assets/logo.png"
+              alt="logo"
+              className="logo-desktop"
+            />
           </a>
         </div>
         <div className="desktop-nav">
-          <nav><a href="#">HOME</a></nav>
+          <nav>
+            <a href="#">HOME</a>
+          </nav>
           {/* <nav><a href="#">OUR COURSES</a></nav> */}
           {/* <nav><Link to="reviews" style={{cursor: "pointer"}} smooth={true} duration={500}>REVIEWS</ Link></nav> */}
-          <nav><a href="#">BLOG</a></nav>
-          <nav><a href="#">ABOUT US</a></nav>
-          <nav><a href="#">CONTACT US</a></nav>
+          <nav>
+            <a href="#">BLOG</a>
+          </nav>
+          <nav>
+            <a href="#">ABOUT US</a>
+          </nav>
+          <nav>
+            <a href="#">CONTACT US</a>
+          </nav>
         </div>
       </div>
 
       {/* Mobile Header */}
       <div className="mobile-header">
         <img src="src/assets/logo.png" alt="logo" className="logo-mobile" />
-        <button className="menu-btn" onClick={() => setIsOpen(true)} aria-label="Open Menu">
+        <button
+          className="menu-btn"
+          onClick={() => setIsOpen(true)}
+          aria-label="Open Menu"
+        >
           ☰
         </button>
       </div>
@@ -38,7 +52,7 @@ function Header() {
       {isOpen && (
         <div className="mobile-menu">
           <div className="mobile-menu-header">
-            <img src="src/assets/logo.png" alt="logo" className="logo-mobile" />
+            {/* <img src="src/assets/logo.png" alt="logo" className="logo-mobile" /> */}
             <button
               className="close-btn"
               onClick={() => setIsOpen(false)}
@@ -48,11 +62,21 @@ function Header() {
             </button>
           </div>
           <nav className="mobile-nav">
-            <a href="#" onClick={() => setIsOpen(false)}>HOME</a>
-            <a href="#" onClick={() => setIsOpen(false)}>OUR COURSES</a>
-            <a href="#" onClick={() => setIsOpen(false)}>REVIEWSS</a>
-            <a href="#" onClick={() => setIsOpen(false)}>BLOG</a>
-            <a href="#" onClick={() => setIsOpen(false)}>ABOUT US</a>
+            <a href="#" onClick={() => setIsOpen(false)}>
+              HOME
+            </a>
+            <a href="#" onClick={() => setIsOpen(false)}>
+              OUR COURSES
+            </a>
+            <a href="#" onClick={() => setIsOpen(false)}>
+              REVIEWS
+            </a>
+            <a href="#" onClick={() => setIsOpen(false)}>
+              BLOG
+            </a>
+            <a href="#" onClick={() => setIsOpen(false)}>
+              ABOUT US
+            </a>
             <a href="#" onClick={() => setIsOpen(false)}>
               CONTACT US
             </a>

@@ -56,19 +56,6 @@
   object-fit: contain;
 }
 
-@media (max-width: 768px) {
-  .brands .brand-logos {
-    grid-template-columns: repeat(2, 1fr);
-    padding-left: 3rem;
-    padding-right: 0;
-  }
-  .brands .brand-logos img {
-    width: 70%;
-    height: auto;
-    object-fit: contain;
-  }
-}
-
 .footer {
   background-color: #240129;
   color: #fff;
@@ -93,7 +80,7 @@
 .footer .top .social {
   display: flex;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 .top .phone .icon,
 .top .email .icon,
@@ -143,13 +130,7 @@
   border: none;
   outline: none;
 }
-.footer .bottom {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    padding: 0 2rem;
-    margin-top: 7rem;
-  }
+
   .footer .long-line{
     display: block;
     width: 100%;
@@ -165,6 +146,14 @@
     margin: 1rem 0;
   }
   
+  .footer .bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+    margin-top: 7rem;
+  }
+
   .footer .bottom .two p:not(.head),
   .footer .bottom .three p:not(:first-child),
   .footer .bottom .four p:not(.head) {
@@ -178,44 +167,7 @@
   .footer .bottom .four p:not(.head):hover {
     color: #fff !important;
   }
-  
-  @media (max-width: 768px) {
-    .footer .top {
-      display: block;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 0 2rem;
-    }
-    .footer .top .vertical-line{
-      display: none;
-    }
-    .footer .bottom {
-      display: block;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 0 4rem;
-    }
-  
-    .footer .bottom > div {
-      /* width: 100%; */
-      /* text-align: left; */
-    }
-  
-    .footer .horizontal-line {
-      margin: none;
-      width: 10%;
-    }
-  
-    .footer .bottom .two,
-    .footer .bottom .three,
-    .footer .bottom .four {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  
+ 
   .footer .bottom .one p {
     font-size: 1rem;
     color: #afc9c4;
@@ -248,7 +200,7 @@
     background: #023535;
     color: white;
     padding: 0.8rem 2rem;
-    width: 30%;
+    width: 50%;
 
     border: none;
     border-radius: 5px;
@@ -269,3 +221,54 @@
     padding: 1rem 0;
     text-align: center;
   }
+
+   
+  @media (max-width: 768px) {
+    .brands .brand-logos {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 3rem;
+      padding-right: 0;
+    }
+    .brands .brand-logos img {
+      width: 70%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .footer .top {
+      display: block;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 2rem;
+    }
+    .footer .top .vertical-line{
+      display: none;
+    }
+    .footer .bottom {
+      display: block;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 2rem;
+      margin-top: 4rem;
+    }
+  
+    .footer .bottom > div {
+      /* width: 100%; */
+      /* text-align: left; */
+    }
+  
+    .footer .horizontal-line {
+      margin: none;
+      width: 10%;
+    }
+  
+    .footer .bottom .two,
+    .footer .bottom .three,
+    .footer .bottom .four {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
