@@ -19,11 +19,10 @@
   }
   
   .welcomeMainImage {
-    width: 90%;
+    width: 100%;
     height: auto;
-    max-height: 600px;
     object-fit: contain;
-    border-radius: 15rem 15rem 0 0;
+    /* border-radius: 15rem 15rem 0 0; */
   }
   
   .welcomeSecondaryImage {

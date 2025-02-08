@@ -1,35 +1,28 @@
 import { motion } from "motion/react";
 import "../styles/welcome.css";
-import Counter from "./counter";
+// import Counter from "./counter";
 function Welcome() {
   return (
     <section className="welcomeSection">
       <div className="welcomeGrid">
         <div className="welcomeMediaContainer">
           <img
-            src="src/assets/student.jpeg"
+            src="src/assets/coding-workshop.png"
             alt="Main welcome visual"
             className="welcomeMainImage"
           />
-          <img
-            src="src/assets/coder.png"
+          {/* <img
+            src="src/assets/coding-workshop.png"
             alt="Coder illustration"
             className="welcomeSecondaryImage"
-          />
-          <div className="studentStatsCard">
-  <Counter
-    targetNumber={800}
-    label="SATISFIED STUDENTS"
-    suffix="+"
-    // style={{ 
-    //   backgroundColor: '#ffffff',
-    //   padding: '20px 30px',
-    //   borderRadius: '8px',
-    //   color: '#000000',
-    //   textAlign: 'center'
-    // }}
-  />
-</div>
+          /> */}
+          {/* <div className="studentStatsCard">
+            <Counter
+              targetNumber={800}
+              label="SATISFIED STUDENTS"
+              suffix="+"
+            />
+          </div> */}
         </div>
 
         <div className="welcomeContent">

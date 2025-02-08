@@ -31,7 +31,7 @@ interface CounterProps {
   label: string;
   suffix?: string;
   style?: React.CSSProperties;
-
+ className?: string;
 }
 
 function Counter({ targetNumber, label, suffix = "" , style}: CounterProps) {

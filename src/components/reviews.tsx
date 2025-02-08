@@ -7,58 +7,61 @@ function Reviews() {
   return (
     <>
       <section id="reviews">
-        <div className="first">
-          <div className="images">
-            <img
-              className="students"
-              src="src/assets/students.jpeg"
-              alt="students"
-            />
-            <div className="students-overlay">
-              <div className="overlay-header">
-                <span>Satisfied Students</span>
-              </div>
-              <div className="avatar-group">
-                <img
-                  className="avatar"
-                  src="src/assets/avatar.jpeg"
-                  alt="student"
-                />
-                <img
-                  className="avatar"
-                  src="src/assets/avatar.jpeg"
-                  alt="student"
-                />
-                <img
-                  className="avatar"
-                  src="src/assets/avatar.jpeg"
-                  alt="student"
-                />
-                <img
-                  className="avatar"
-                  src="src/assets/avatar.jpeg"
-                  alt="student"
-                />
-                <p className="avatar-count">80+</p>
+      <div className="reviewsGrid">
+          <div className="mediaColumn">
+            <div className="mediaContainer">
+              <img
+                className="studentsImage"
+                src="src/assets/students.jpeg"
+                alt="Happy students"
+              />
+              <div className="studentsOverlay">
+                <div className="overlayHeader">
+                  <span>Satisfied Students</span>
+                </div>
+                <div className="avatarStack">
+                  <img
+                    className="studentAvatar"
+                    src="src/assets/avatar.jpeg"
+                    alt="Student"
+                  />
+                  <img
+                    className="studentAvatar"
+                    src="src/assets/avatar.jpeg"
+                    alt="Student"
+                  />
+                  <img
+                    className="studentAvatar"
+                    src="src/assets/avatar.jpeg"
+                    alt="Student"
+                  />
+                  <img
+                    className="studentAvatar"
+                    src="src/assets/avatar.jpeg"
+                    alt="Student"
+                  />
+                  <p className="avatarCount">80+</p>
+                </div>
               </div>
             </div>
           </div>
-          <div className="best">
-            <p className="head">What Our Students Think</p>
-            <h3>About us as the best ICT Academy in Town</h3>
-            <div className="texts">
-              <div className="left">
-                <FaStar className="icon" />
-                <div className="text">
-                  <p>Personalized Classes</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+
+          <div className="featuresColumn">
+            <p className="sectionSubtitle">What Our Students Think</p>
+            <h3 className="sectionTitle">About us as the best ICT Academy in Town</h3>
+            <div className="featureList">
+              <div className="featureItem">
+                <FaStar className="featureIcon" />
+                <div className="featureText">
+                  <p className="featureTitle">Personalized Classes</p>
+                  <p className="featureDescription">Lorem ipsum dolor sit amet, consectetur.</p>
                 </div>
               </div>
-              <div className="right">
-                <FaStar className="icon" />
-                <div className="text">
-                  <p>Personalized Classes</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              <div className="featureItem">
+                <FaStar className="featureIcon" />
+                <div className="featureText">
+                  <p className="featureTitle">Expert Instructors</p>
+                  <p className="featureDescription">Lorem ipsum dolor sit amet, consectetur.</p>
                 </div>
               </div>
             </div>
@@ -102,15 +105,37 @@ function Reviews() {
           </div>
         </div>
       </section>
-      <div className="counter-row">
-        <Counter targetNumber={5000} label="Successfully Trained" suffix="+" />
-        <div className="vertical-line"></div>
-        <Counter targetNumber={3500} label="Classes Held" suffix="+" />
-        <div className="vertical-line"></div>
-        <Counter targetNumber={96} label="Satisfaction Rate" suffix="%" />
-        <div className="vertical-line"></div>
-        <Counter targetNumber={90} label="Success Rate" suffix="%" />
-      </div>
+      <div className="achievementsContainer">
+  <div className="achievementGroup">
+    <Counter 
+      targetNumber={5000} 
+      label="Successfully Trained" 
+      suffix="+" 
+      className="achievementCard"
+    />
+    <div className="dividerLine"></div>
+    <Counter 
+      targetNumber={3500} 
+      label="Classes Held" 
+      suffix="+" 
+      className="achievementCard"
+    />
+    <div className="dividerLine"></div>
+    <Counter 
+      targetNumber={96} 
+      label="Satisfaction Rate" 
+      suffix="%" 
+      className="achievementCard"
+    />
+    <div className="dividerLine"></div>
+    <Counter 
+      targetNumber={90} 
+      label="Success Rate" 
+      suffix="%" 
+      className="achievementCard"
+    />
+  </div>
+</div>
     </>
   );
 }
