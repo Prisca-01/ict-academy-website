@@ -7,7 +7,7 @@ function Reviews() {
   return (
     <>
       <section id="reviews">
-      <div className="reviewsGrid">
+        <div className="reviewsGrid">
           <div className="mediaColumn">
             <div className="mediaContainer">
               <img
@@ -48,20 +48,26 @@ function Reviews() {
 
           <div className="featuresColumn">
             <p className="sectionSubtitle">What Our Students Think</p>
-            <h3 className="sectionTitle">About us as the best ICT Academy in Town</h3>
+            <h3 className="sectionTitle">
+              About us as the best ICT Academy in Town
+            </h3>
             <div className="featureList">
               <div className="featureItem">
                 <FaStar className="featureIcon" />
                 <div className="featureText">
                   <p className="featureTitle">Personalized Classes</p>
-                  <p className="featureDescription">Lorem ipsum dolor sit amet, consectetur.</p>
+                  <p className="featureDescription">
+                    Lorem ipsum dolor sit amet, consectetur.
+                  </p>
                 </div>
               </div>
               <div className="featureItem">
                 <FaStar className="featureIcon" />
                 <div className="featureText">
                   <p className="featureTitle">Expert Instructors</p>
-                  <p className="featureDescription">Lorem ipsum dolor sit amet, consectetur.</p>
+                  <p className="featureDescription">
+                    Lorem ipsum dolor sit amet, consectetur.
+                  </p>
                 </div>
               </div>
             </div>
@@ -106,36 +112,32 @@ function Reviews() {
         </div>
       </section>
       <div className="achievementsContainer">
-  <div className="achievementGroup">
-    <Counter 
-      targetNumber={5000} 
-      label="Successfully Trained" 
-      suffix="+" 
-      className="achievementCard"
-    />
-    <div className="dividerLine"></div>
-    <Counter 
-      targetNumber={3500} 
-      label="Classes Held" 
-      suffix="+" 
-      className="achievementCard"
-    />
-    <div className="dividerLine"></div>
-    <Counter 
-      targetNumber={96} 
-      label="Satisfaction Rate" 
-      suffix="%" 
-      className="achievementCard"
-    />
-    <div className="dividerLine"></div>
-    <Counter 
-      targetNumber={90} 
-      label="Success Rate" 
-      suffix="%" 
-      className="achievementCard"
-    />
-  </div>
-</div>
+        <div className="achievementGroup">
+          <Counter
+            targetNumber={5000}
+            label="Successfully Trained"
+            suffix="+"
+          />
+        <div className="dividerLine"></div>
+        <Counter
+          targetNumber={3500}
+          label="Classes Held"
+          suffix="+"
+        />
+        <div className="dividerLine"></div>
+        <Counter
+          targetNumber={96}
+          label="Satisfaction Rate"
+          suffix="%"
+        />
+        <div className="dividerLine"></div>
+        <Counter
+          targetNumber={90}
+          label="Success Rate"
+          suffix="%"
+        />
+        </div>
+      </div>
     </>
   );
 }

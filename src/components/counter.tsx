@@ -15,13 +15,10 @@
 //     return <motion.pre style={text}>{rounded}</motion.pre>
 // }
 
-
-
 // const text = {
 //     fontSize: 64,
 //     color: "#4ff0b7",
 // }
-
 
 import { animate, motion, useMotionValue, useTransform } from "framer-motion";
 import { useEffect } from "react";
@@ -31,19 +28,17 @@ interface CounterProps {
   label: string;
   suffix?: string;
   style?: React.CSSProperties;
- className?: string;
+  className?: string;
 }
 
-function Counter({ targetNumber, label, suffix = "" , style}: CounterProps) {
+function Counter({ targetNumber, label, suffix = "", style }: CounterProps) {
   const count = useMotionValue(0);
-  const rounded = useTransform(count, (value) => 
-    Math.round(value) + suffix
-  );
+  const rounded = useTransform(count, (value) => Math.round(value) + suffix);
 
   useEffect(() => {
     const controls = animate(count, targetNumber, {
       duration: 6,
-      ease: "easeOut"
+      ease: "easeOut",
     });
     return () => controls.stop();
   }, [targetNumber, count]);

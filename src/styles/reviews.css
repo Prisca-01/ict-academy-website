@@ -69,7 +69,7 @@
   
   .avatarCount {
     background: #023535;
-    color: white;
+    color: #ffffff;
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -400,59 +400,80 @@
         background: #4285f4;
     }
 }
+/* Achievements Section */
 
-/* Counter Section */
-.counter-row {
+.achievementsContainer {
+    background: #023535;
+    padding: 0 2rem;
+    margin: 4rem 0;
+  }
+  
+  .achievementGroup {
     display: flex;
-    justify-content: space-between;
-    margin: 4rem auto;
-    background-color: #023535;
-    gap: 2rem;
-    flex-wrap: wrap;
-    height: 200px;
+    justify-content: space-around;
     align-items: center;
-  }
-  .counter-row .vertical-line{
-    width: 1px;
-    height: 100%;
-    background-color: #c28e00;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    height: 150px;
 
   }
+
+
   .counter-column {
-    text-align: center;
-    flex: 1;
-    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
   
   .counter-number {
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
     font-weight: 700;
-    color: #fff;
-    margin-bottom: 0.5rem;
+    color: #ffffff !important;
   }
   
   .counter-label {
-    font-size: 1.1rem;
-    color: #fff;
-    max-width: 150px;
-    margin: 0 auto;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
   }
   
+  .dividerLine {
+    width: 1px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0 1rem;
+  }
+  
+  
+  /* Mobile Styles */
   @media (max-width: 768px) {
-    .counter-row {
-      flex-direction: column;
-      gap: 3rem;
-      padding: 2rem 0;
+    .achievementsContainer {
+      padding: 2rem 1rem;
     }
   
-    .counter-number {
+    .achievementGroup {
+      flex-direction: column;
+      gap: 2.5rem;
+      height: 450px;
+      text-align: center;
+    }
+  
+    .dividerLine {
+      display: none;
+    }
+  
+    .achievementCard {
+      min-width: auto;
+      padding: 0.5rem;
+    }
+  
+    .achievementNumber {
       font-size: 2rem;
     }
   
-    .counter-label {
+    .achievementLabel {
       font-size: 1rem;
-    }
-    .counter-row .vertical-line{
-        display: none;
+      max-width: 200px;
     }
   }

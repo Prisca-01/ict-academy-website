@@ -12,11 +12,11 @@
     gap: 2rem;
   }
   
-  .welcomeMediaContainer {
+  /* .welcomeMediaContainer {
     position: relative;
     min-height: 500px;
     padding: 0 3rem;
-  }
+  } */
   
   .welcomeMainImage {
     width: 100%;
@@ -25,7 +25,7 @@
     /* border-radius: 15rem 15rem 0 0; */
   }
   
-  .welcomeSecondaryImage {
+  /* .welcomeSecondaryImage {
     position: absolute;
     bottom: 0;
     right: 5%;
@@ -33,7 +33,7 @@
     max-width: 400px;
     height: auto;
     object-fit: contain;
-  }
+  } */
   
   .studentStatsCard {
     position: absolute;
@@ -45,7 +45,7 @@
     /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
   }
 
-  
+/*   
   .counter-column {
     display: flex;
     flex-direction: column;
@@ -77,7 +77,7 @@
     margin-top: 0.5rem;
     font-weight: 600;
   }
-  
+   */
   /* Content Styles */
   .welcomeContent {
     padding: 2rem 0;
@@ -101,7 +101,7 @@
     margin: 2rem 0;
   }
   
-  .dividerLine {
+  .divideLine {
     height: 1px;
     background-color: #e4e4e4;
     margin: 1.5rem 0;
@@ -160,3 +160,13 @@
       font-size: 1rem;
     }
   }
+  @media (max-width: 850px) {
+    .welcomeGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .welcomeMainImage {
+
+display: none;
+  }
+}

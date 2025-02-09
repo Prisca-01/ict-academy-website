@@ -29,7 +29,7 @@ function Welcome() {
           <span className="welcomePrefix">Welcome to</span>
           <h2 className="welcomeTitle">My ICT Academy</h2>
           <div className="contentDivider">
-            <div className="dividerLine"></div>
+            <div className="divideLine"></div>
             <p className="welcomeDescription">
               My ICT Academy is a leading online learning platform that helps
               anyone learn business, software, technology, and creative skills
@@ -38,7 +38,7 @@ function Welcome() {
               access to the My ICT Academy video library of engaging,
               top-quality courses taught by recognized industry experts.
             </p>
-            <div className="dividerLine"></div>
+            <div className="divideLine"></div>
           </div>
 
           <motion.div
