@@ -1,31 +1,31 @@
 /* Container Styles */
 .welcomeSection {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0 28px;
-    margin-top: 6rem;
-  }
-  
-  .welcomeGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-  
-  /* .welcomeMediaContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 28px;
+  margin-top: 6rem;
+}
+
+.welcomeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* .welcomeMediaContainer {
     position: relative;
     min-height: 500px;
     padding: 0 3rem;
   } */
-  
-  .welcomeMainImage {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    /* border-radius: 15rem 15rem 0 0; */
-  }
-  
-  /* .welcomeSecondaryImage {
+
+.welcomeMainImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  /* border-radius: 15rem 15rem 0 0; */
+}
+
+/* .welcomeSecondaryImage {
     position: absolute;
     bottom: 0;
     right: 5%;
@@ -34,16 +34,16 @@
     height: auto;
     object-fit: contain;
   } */
-  
-  .studentStatsCard {
-    position: absolute;
-    background: #ffffff;
-    padding: 20px 30px;
-    bottom: 120px;
-    left: 15%;
-    border-radius: 8px;
-    /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
-  }
+
+.studentStatsCard {
+  position: absolute;
+  background: #ffffff;
+  padding: 20px 30px;
+  bottom: 120px;
+  left: 15%;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
+}
 
 /*   
   .counter-column {
@@ -78,95 +78,94 @@
     font-weight: 600;
   }
    */
-  /* Content Styles */
-  .welcomeContent {
-    padding: 2rem 0;
+/* Content Styles */
+.welcomeContent {
+  padding: 2rem 0;
+}
+
+.welcomePrefix {
+  color: #023535;
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.welcomeTitle {
+  color: #0f0c0c;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.contentDivider {
+  margin: 2rem 0;
+}
+
+.divideLine {
+  height: 1px;
+  background-color: #e4e4e4;
+  margin: 1.5rem 0;
+}
+
+.welcomeDescription {
+  color: #0f0c0cb2;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 1.5rem 0;
+}
+
+/* Button Styles */
+.ctaButton {
+  position: relative;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background: #023535;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.buttonLabel {
+  position: relative;
+  z-index: 2;
+}
+
+.buttonOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0d0e3d;
+  z-index: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .welcomeGrid {
+    grid-template-columns: 1fr;
   }
-  
-  .welcomePrefix {
-    color: #023535;
-    font-size: 1.8rem;
-    display: block;
-    margin-bottom: 0.5rem;
+
+  .welcomeMediaContainer {
+    display: none;
   }
-  
+
   .welcomeTitle {
-    color: #0f0c0c;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
+    font-size: 2rem;
   }
-  
-  .contentDivider {
-    margin: 2rem 0;
-  }
-  
-  .divideLine {
-    height: 1px;
-    background-color: #e4e4e4;
-    margin: 1.5rem 0;
-  }
-  
+
   .welcomeDescription {
-    color: #0f0c0cb2;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin: 1.5rem 0;
-  }
-  
-  /* Button Styles */
-  .ctaButton {
-    position: relative;
-    padding: 1rem 2rem;
     font-size: 1rem;
-    background: #023535;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    overflow: hidden;
-    cursor: pointer;
   }
-  
-  .buttonLabel {
-    position: relative;
-    z-index: 2;
+}
+@media (max-width: 850px) {
+  .welcomeGrid {
+    grid-template-columns: 1fr;
   }
-  
-  .buttonOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #0d0e3d;
-    z-index: 1;
-  }
-  
-  /* Mobile Responsive */
-  @media (max-width: 768px) {
-    .welcomeGrid {
-      grid-template-columns: 1fr;
-    }
-  
-    .welcomeMediaContainer {
-     display: none;
-    }
 
-    .welcomeTitle {
-      font-size: 2rem;
-    }
-  
-    .welcomeDescription {
-      font-size: 1rem;
-    }
-  }
-  @media (max-width: 850px) {
-    .welcomeGrid {
-      grid-template-columns: 1fr;
-    }
-  
-    .welcomeMainImage {
-
-display: none;
+  .welcomeMainImage {
+    display: none;
   }
 }

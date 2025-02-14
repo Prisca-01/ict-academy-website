@@ -5,7 +5,7 @@ import Counter from "./counter";
 
 function Reviews() {
   return (
-    <>
+    <div>
       <section id="reviews">
         <div className="reviewsGrid">
           <div className="mediaColumn">
@@ -138,7 +138,7 @@ function Reviews() {
         />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
